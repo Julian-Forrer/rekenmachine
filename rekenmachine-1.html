@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>rekenmachine-hoofdpagina</title>
+
+    <link rel="stylesheet" href="rekenmachine-1.css">
+
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <div class="result-container">
+            <span id="result">0</span>
+        </div>
+
+        <table>
+            <tr class="row">
+                <td><button onclick="nummer('7')" class="button">7</button></td>
+                <td><button onclick="nummer('8')" class="button">8</button></td>
+                <td><button onclick="nummer('9')" class="button">9</button></td>
+                <td><button onclick="operator('-')" class="button" style="background-color: orange;">-</button></td>
+            </tr>
+
+            <tr class="row">
+                <td><button onclick="nummer('4')" class="button">4</button></td>
+                <td><button onclick="nummer('5')" class="button">5</button></td>
+                <td><button onclick="nummer('6')" class="button">6</button></td>
+                <td><button onclick="operator('+')" class="button" style="background-color: orange;">+</button></td>
+            </tr>
+
+            <tr class="row">
+                <td><button onclick="nummer('1')" class="button">1</button></td>
+                <td><button onclick="nummer('2')" class="button">2</button></td>
+                <td><button onclick="nummer('3')" class="button">3</button></td>
+                <td><button onclick="operator('/')" class="button" style="background-color: orange;">/</button></td>
+            </tr>
+
+            <tr class="row">
+                <td><button onclick="nummer('0')" class="button">0</button></td>
+                <td><button onclick="clearResult()" class="button" style="background-color: red;">C</button></td>
+                <td><button onclick="Decimal()" class="button" style="background-color:yellow;">.</button></td>
+                <td><button onclick="operator('*')" class="button" style="background-color: orange;">*</button></td>
+            </tr>
+
+            <tr class="row">
+                <td><button onclick="calculate()" class="button-1" style=" background-color:green;">=</button></td>
+                <td><button onclick="deleteCharacter()" class="button-1" style=" background-color: blue;">CE</button>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+<script type="text/javascript" src="rekenmachine-1.js" defer></script>
+
+</html>
